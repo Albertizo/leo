@@ -245,30 +245,18 @@ $(document).ready(function () {
 </div>
 <div id="loading-the-libraries" class="section level1">
 <h1>Loading the Libraries</h1>
-<p>In every project that you a=under take as a data analyst/scientist, it’s important to note the packages that <code>tools</code> that you will need in the course of the analysis, or creating your models. - Hence my opinion is that you load all the required libraries at the initial stage of your project.</p>
+<p>In every project that you a=under take as a data analyst/scientist, it’s important to note the packages that <code>tools</code> that you will need in the course of the analysis, or creating your models. -Hence my opinion is that you load all the required libraries at the initial stage of your project.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmBgYCJ9 -->
 <pre class="r"><code>library(dplyr)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDjpLzjuLFkcGx5cuOkvOO4siB3YXMgYnVpbHQgdW5kZXIgUiB2ZXJzaW9uIDMuNC40XG5BdHRhY2hpbmcgcGFja2FnZTog46S847ixZHBseXLjpLzjuLJcblxuVGhlIGZvbGxvd2luZyBvYmplY3RzIGFyZSBtYXNrZWQgZnJvbSDjpLzjuLFwYWNrYWdlOnN0YXRz46S847iyOlxuXG4gICAgZmlsdGVyLCBsYWdcblxuVGhlIGZvbGxvd2luZyBvYmplY3RzIGFyZSBtYXNrZWQgZnJvbSDjpLzjuLFwYWNrYWdlOmJhc2XjpLzjuLI6XG5cbiAgICBpbnRlcnNlY3QsIHNldGRpZmYsIHNldGVxdWFsLCB1bmlvblxuIn0= -->
-<pre><code>package 㤼㸱dplyr㤼㸲 was built under R version 3.4.4
-Attaching package: 㤼㸱dplyr㤼㸲
-
-The following objects are masked from 㤼㸱package:stats㤼㸲:
-
-    filter, lag
-
-The following objects are masked from 㤼㸱package:base㤼㸲:
-
-    intersect, setdiff, setequal, union</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IA0KICBodG1sX25vdGVib29rOg0KICAgIHRvYzpUcnVlDQogICAgY29kZV9mb2xkaW5nOlRydWUNCiAgICANCiAgICANCi0tLQ0KIyBJbnRyb2R1Y3Rpb24NCg0KVGhpcyBpcyBhbiBpbnRyb2R1Y3Rpb24gY291cnNlIHRvIFItIHByb2dyYW1taW5nIGZvciB0aG9zZSB3aG8gaGF2ZSBiYXNpY3Mgb2Ygc3RhdGlzdGljcyBhbmQgYW55IG90aGVyIHByb2dyYW1taW5nIGxhbmd1YWdlLg0KDQoNCiNMb2FkaW5nIHRoZSBMaWJyYXJpZXMNCiBJbiBldmVyeSBwcm9qZWN0IHRoYXQgeW91IGE9dW5kZXIgdGFrZSBhcyBhIGRhdGEgYW5hbHlzdC9zY2llbnRpc3QsIGl0J3MgaW1wb3J0YW50IHRvIG5vdGUgdGhlIHBhY2thZ2VzIHRoYXQgYHRvb2xzYCB0aGF0IHlvdSB3aWxsIG5lZWQgaW4gdGhlIGNvdXJzZSBvZiB0aGUgYW5hbHlzaXMsIG9yIGNyZWF0aW5nIHlvdXIgbW9kZWxzLg0KIC0gSGVuY2UgbXkgb3BpbmlvbiBpcyB0aGF0IHlvdSBsb2FkIGFsbCB0aGUgcmVxdWlyZWQgbGlicmFyaWVzIGF0IHRoZSBpbml0aWFsIHN0YWdlIG9mIHlvdXIgIHByb2plY3QuDQoNCmBgYHtyfQ0KbGlicmFyeShkcGx5cikNCmBgYA0KDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IA0KICBodG1sX25vdGVib29rOg0KICAgIHRvYzpUcnVlDQogICAgY29kZV9mb2xkaW5nOlRydWUNCiAgICANCiAgICANCi0tLQ0KIyBJbnRyb2R1Y3Rpb24NCg0KVGhpcyBpcyBhbiBpbnRyb2R1Y3Rpb24gY291cnNlIHRvIFItIHByb2dyYW1taW5nIGZvciB0aG9zZSB3aG8gaGF2ZSBiYXNpY3Mgb2Ygc3RhdGlzdGljcyBhbmQgYW55IG90aGVyIHByb2dyYW1taW5nIGxhbmd1YWdlLg0KDQoNCiNMb2FkaW5nIHRoZSBMaWJyYXJpZXMNCiBJbiBldmVyeSBwcm9qZWN0IHRoYXQgeW91IGE9dW5kZXIgdGFrZSBhcyBhIGRhdGEgYW5hbHlzdC9zY2llbnRpc3QsIGl0J3MgaW1wb3J0YW50IHRvIG5vdGUgdGhlIHBhY2thZ2VzIHRoYXQgYHRvb2xzYCB0aGF0IHlvdSB3aWxsIG5lZWQgaW4gdGhlIGNvdXJzZSBvZiB0aGUgYW5hbHlzaXMsIG9yIGNyZWF0aW5nIHlvdXIgbW9kZWxzLg0KIC1IZW5jZSBteSBvcGluaW9uIGlzIHRoYXQgeW91IGxvYWQgYWxsIHRoZSByZXF1aXJlZCBsaWJyYXJpZXMgYXQgdGhlIGluaXRpYWwgc3RhZ2Ugb2YgeW91ciAgcHJvamVjdC4NCg0KYGBge3IsIG1lc3NhZ2U9RkFMU0V9DQoNCmxpYnJhcnkoZHBseXIpDQpsaWJyYXJ5KGdncGxvdDIpDQpsaWJyYXJ5KGx1YnJpZGF0ZSkNCg0KYGBgDQoNCg0K</div>
 
 
 

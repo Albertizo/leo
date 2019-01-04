@@ -14,10 +14,14 @@ This is an introduction course to R- programming for those who have basics of st
 
 #Loading the Libraries
  In every project that you a=under take as a data analyst/scientist, it's important to note the packages that `tools` that you will need in the course of the analysis, or creating your models.
- - Hence my opinion is that you load all the required libraries at the initial stage of your  project.
+ -Hence my opinion is that you load all the required libraries at the initial stage of your  project.
 
-```{r}
+```{r, message=FALSE}
+
 library(dplyr)
+library(ggplot2)
+library(lubridate)
+
 ```
 
 
