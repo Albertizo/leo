@@ -1,27 +1,104 @@
 ---
 title: "R Notebook"
-output: 
-  html_notebook:
-    toc:True
-    code_folding:True
-    
-    
+output:
+  html_notebook: toc:True code_folding:True
+  pdf_document: default
 ---
 # Introduction
 
 This is an introduction course to R- programming for those who have basics of statistics and any other programming language.
 
 
-#Loading the Libraries
+#Loading the Libraries 
  In every project that you a=under take as a data analyst/scientist, it's important to note the packages that `tools` that you will need in the course of the analysis, or creating your models.
  -Hence my opinion is that you load all the required libraries at the initial stage of your  project.
 
-```{r, message=FALSE}
+```{r, message=FALSE, warning=FALSE}
 
 library(dplyr)
 library(ggplot2)
 library(lubridate)
+library(tidyverse)
 
 ```
+## Loading the Datasets 
+
+```{r}
+train <- read.csv("E:/Rstaff/kaggle/titanic/train.csv",na.strings=c('NA',''))
+test <- read.csv("E:/Rstaff/kaggle/titanic/test.csv",na.strings=c('NA',''))
+```
+## Data Exploration
+```{r}
+dim(train)
+dim(test)
+```
+
+```{r}
+glimpse(tr)
+```
+## Data manupulation
+
+```{r}
+tr<-train %>% mutate(Survived= as.factor(Survived),
+                     Pclass=as.factor(Pclass),
+                     SibSp=as.factor(SibSp))
+```
+
+
+```{r}
+s<-na.omit(tr$Age)
+```
+
+
+```{r}
+ggplot(tr, aes(Sex, Age))+
+  geom_boxplot( aes(fill= Sex))
+```
+```{r}
+ggplot(tr, aes(Embarked, Age))+
+  geom_boxplot(aes(fill= Embarked))
+
+```
+
+```{r}
+levels(tr$Sex)
+
+sum(is.na(tr$Age))
+```
+```{r}
+head(subset(tr, Sex=="male" & Age >= 40 & Embarked=="C"))
+```
+
+
+
+```{r}
+head(tr)
+```
+
+```{r}
+ggplot(tr, aes(Pclass))+
+  geom_bar(aes(fill= Survived))
+
+
+```
+```{r}
+
+qplot(Pclass, data = tr,fill= Survived, position = "dodge")
+ 
+```
+```{r}
+summary(tr)
+```
+```{r}
+tr %>% group_by(na.omit(tr$Embarked)) %>% 
+  count()
+```
+
+
+
+
+
+
+
 
 
